@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* This doesn't work in Safari yet */
+/* html {
+  scrollbar-gutter: stable both-edges;
+} */
+
+@font-face {
+  font-family: 'Iosevka';
+  font-style: normal;
+  src: url('$lib/fonts/iosevka-custom-regular.woff2');
+}
+*/ .logo-gradient {
+  background-image: linear-gradient(
+    in oklch -45deg,
+    oklch(80% 0.27 175) 0%,
+    oklch(85% 0.27 160) 50%
+  );
+}
+
+.logo-gradient:active {
+  background-image: linear-gradient(
+    in oklch 185deg,
+    oklch(85% 0.27 150) 0%,
+    oklch(85% 0.27 120) 100%
+  );
+}
