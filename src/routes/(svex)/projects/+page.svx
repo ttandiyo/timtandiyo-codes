@@ -1,0 +1,75 @@
+---
+title: projects
+---
+
+<script lang="ts">
+  import Prose from '$lib/components/prose.svelte';
+  import Text2Columns from '$lib/components/text2columns.svelte';
+  import stttPic from '$lib/assets/sttt.png';
+  import amMainPic from '$lib/assets/asset-manager-main.png';
+  import amModalPic from '$lib/assets/asset-manager-modal.png';
+</script>
+
+<Text2Columns>
+<Prose>
+
+## STTT
+
+<img src={stttPic} alt="Gameplay" />
+
+A two-player game written in modern React, TypeScript, HTML, and CSS. It takes the basic premise of tic-tac-toe but soups it up—the board is larger, and the winner is determined by whoever has the most lines of 3-in-a-row at the end of the game. Also, you only have 5 seconds before a random move is made on your behalf!
+
+I was motivated to write this because I would play a similar game with my students in Taiwan where they'd have to answer a question to make a move, but manually on a smartboard. This was time-consuming to manage and wasted valuable class time.
+
+As an extension, a backend server component is under development to allow for multiplayer over the Internet using session codes, and potentially user profiles/friends lists later down the line. A user interface for customizable game rules, accessibility features, and additional animations/sound effects are also in the works.
+
+[Demo](https://sttt.timtandiyo.codes)
+[GitHub](https://github.com/ttandiyo/sttt)
+
+</Prose>
+<Prose>
+
+## DonutAI
+
+A cross-platform C++ implementation of a bot player for the game of Connect 4.
+
+DonutAI was written by me as part of a university project for a tournament which pitted every participant's bot player against the others'. Each bot player had to communicate state with the provided shell using its API and was allotted 5 seconds to make a move. Thanks to extensive profiling and optimizations, DonutAI placed in the top 20%.
+
+In the future, I'd like to make a new version to explore machine learning techniques.
+
+[GitHub](https://github.com/ttandiyo/DonutAI)
+
+</Prose>
+
+<Prose>
+
+## Personal Website
+
+This website is a continuous work in progress made to explore new web technologies. It is built with Next.js, React, TypeScript, and Tailwind.
+
+The front page animation uses CSS 3D transforms and a WebGL shader creates the background noise. The font, Iosevka, was compiled for reduced file size. I profile the website in Lighthouse on a regular basis to check for any performance issues.
+
+For ease of maintainability, I've set up MDX so that I can write longform content in Markdown with inline React components.
+
+The design is fully responsive, and I've taken advantage of modern CSS color functionality to access a wider color gamut whenever it's available.
+
+At the moment, all animations respect the user's motion preference setting, while I'm currently working on adding more accessibility support!
+
+[GitHub](https://github.com/ttandiyo/personal-website)
+
+</Prose>
+<Prose>
+
+## Asset Manager
+
+<img src={amMainPic} alt="Main interface" />
+<img src={amModalPic} alt="Device details/edit modal" />
+A front-end written with Ember.js and UIKit for IT asset management. Users could easily track assets and edit their tags whenever necessary. Integrated barcode printing and search were added in a later version. Assets were pulled and manipulated using a REST API to the backend. A user management page allowed admins to easily add/edit other users.
+
+</Prose>
+</Text2Columns>
+<Prose>
+
+More projects coming soon!
+
+</Prose>
