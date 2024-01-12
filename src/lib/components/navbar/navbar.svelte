@@ -4,10 +4,9 @@
   import BurgerIcon from '$lib/icons/burger-icon.svelte';
   import NavList from './navlist.svelte';
 
-  let navOpen = false;
+  let isOpen = false;
 </script>
 
-<!-- ${settings.stickyNavBar && 'sticky'}  -->
 <div
   class="sticky z-20 top-0 w-full backdrop-blur-lg bg-white/80 select-none pt-[env(safe-area-inset-top)] pr-[env(safe-area-inset-right)] pl-[env(safe-area-inset-left)]"
 >
@@ -20,21 +19,21 @@
     </nav>
     <button
       class="flex justify-center items-center sm:hidden p-2 z-1"
-      on:click={() => (navOpen = !navOpen)}
+      on:click={() => (isOpen = !isOpen)}
     >
-      {#if navOpen}
+      {#if isOpen}
         <CloseIcon />
       {:else}
         <BurgerIcon />
       {/if}
     </button>
   </header>
-  {#if navOpen}
+  {#if isOpen}
     <nav
       class="flex sm:hidden mx-auto max-w-screen-xl items-center justify-between border-b border-gray/25"
     >
       <ul class="flex justify-center items-center gap-4 p-2 max-w-screen-xl flex-wrap mx-auto">
-        <NavList on:click={() => (navOpen = !navOpen)} />
+        <NavList on:click={() => (isOpen = !isOpen)} />
       </ul>
     </nav>
   {/if}
