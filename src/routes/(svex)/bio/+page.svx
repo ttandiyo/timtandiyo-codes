@@ -1,0 +1,69 @@
+---
+title: bio
+---
+
+<script lang="ts">
+  import Prose from '$lib/components/prose.svelte';
+  import Text2Columns from '$lib/components/text2columns.svelte';
+</script>
+
+<Text2Columns>
+<Prose>
+
+## From the Beginning
+
+My fascination with technology has been a lifelong journey. At the age of seven, I published my first website on Geocities, and it wasn't long before I began figuring out how to write scripts to automate mundane tasks—whether it was for my homework or the games I played.
+
+Summers were spent helping my parents at their photography lab. As they had limited English skills, I took the initiative to learn how to research solutions to their problems. I streamlined tedious image processing workflows and became adept at troubleshooting various computer and networking issues.
+
+Although I initially explored a path in biochemistry during my early university years, my true calling led me back to studying computer science. I knew it was the right fit for me during my first class, when I realized how excited I was to go home to work on the next project!
+
+</Prose>
+<Prose>
+
+## To Creating
+
+I love creating things: besides software, also music and photography. I've always found joy in seeing how things are made and how they work. I especially appreciate good products that are frictionless, feel natural to use, and make the user's life easier.
+
+By picking them apart and making my own things over the years, I've learned to appreciate that making something good is anything but easy—a lot of thought, care, and attention to detail are what sets them apart.
+
+</Prose>
+</Text2Columns>
+
+<Prose>
+
+## Experiences
+
+</Prose>
+<Text2Columns>
+<Prose>
+
+### Transformation
+
+After graduating from university, I went to revamp my family's company's tech infrastructure.
+
+I planned and executed a ground-up overhaul of the infrastructure across three locations, incorporating managed routers, switches, and access points to partition sensitive data on different VLANs and control network access. I installed ESXi servers to host an array of functions—from VPN gateways interconnecting the locations, to Active Directory servers for user/device management and single sign-on, RADIUS servers for network authentication, and database servers for various business applications.
+
+Additionally, I established a company domain name and integrated Google Workspace, providing company-wide email and other productivity tools. Through Google Cloud, I operated the primary DNS server, a networking controller, an external VPN gateway, and various other services. Once the infrastructure was solidified, I contributed to the development of internal applications for other departments.
+
+This project presented numerous unfamiliar challenges, but I successfully navigated them and modernized the company's infrastructure. It was a lesson-rich journey through networking, cloud services, back-end development, and understanding end-user needs.
+
+</Prose>
+<Prose>
+
+### Taiwan
+
+Recently, I embarked on a life-changing journey that took me far beyond the confines of code—I spent a year in Taiwan teaching English. This leap into the unknown, well outside my comfort zone, turned into an incredible and humbling adventure that I'll never forget.
+
+Teaching grammar patterns to a six-year-old is exactly as challenging as it sounds! Every day, I navigated through cultural and linguistic hurdles, an experience that honed my problem-solving skills in unexpected ways.
+
+In Taiwan, I developed a deep appreciation for the local way of life, culture, and perspective. It was profound to see how some millions of people would approach a situation completely differently than I would as an American, and that their approach made just as much sense as mine did.
+
+Throughout my stay, I had the fortune of meeting many wonderful people from around the world. We became a microcosm of diverse cultures, each of us sharing and learning from one another.
+
+This experience significantly bolstered my public speaking and communication skills. When you're standing in front of 20 children, there's no room for embarrassment, only growth and resilience.
+
+The most rewarding part, however, was the connection with the children. Seeing their faces light up with understanding and excitement during class was genuinely fulfilling. It reminded me of the power of teaching and learning, be it in a classroom or through a line of code.
+
+</Prose>
+</Text2Columns>
