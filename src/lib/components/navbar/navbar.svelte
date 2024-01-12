@@ -2,6 +2,7 @@
   import Logo from '$lib/components/logo.svelte';
   import CloseIcon from '$lib/icons/close-icon.svelte';
   import BurgerIcon from '$lib/icons/burger-icon.svelte';
+  import NavList from './navlist.svelte';
 
   let navOpen = false;
 </script>
@@ -14,7 +15,7 @@
     <Logo />
     <nav class="hidden sm:flex">
       <ul class="flex justify-center items-center gap-8 m-2 lg:m-4 flex-wrap">
-        <!-- <NavList links={settings.navBarLinks} /> -->
+        <NavList />
       </ul>
     </nav>
     <button
@@ -33,7 +34,7 @@
       class="flex sm:hidden mx-auto max-w-screen-xl items-center justify-between border-b border-gray/25"
     >
       <ul class="flex justify-center items-center gap-4 p-2 max-w-screen-xl flex-wrap mx-auto">
-        <!-- <NavList links={settings.navBarLinks} handleClick={() => setNavOpen(!navOpen)} /> -->
+        <NavList on:click={() => (navOpen = !navOpen)} />
       </ul>
     </nav>
   {/if}
