@@ -8,17 +8,17 @@
 </script>
 
 <div
-  class="sticky z-20 top-0 w-full backdrop-blur-lg bg-white/80 select-none pt-[env(safe-area-inset-top)] pr-[env(safe-area-inset-right)] pl-[env(safe-area-inset-left)]"
+  class="sticky top-0 z-20 w-full select-none bg-white/80 pl-[env(safe-area-inset-left)] pr-[env(safe-area-inset-right)] pt-[env(safe-area-inset-top)] backdrop-blur-lg"
 >
-  <header class="mx-auto max-w-screen-xl flex items-center justify-between border-b border-gray/25">
+  <header class="mx-auto flex max-w-screen-xl items-center justify-between border-b border-gray/25">
     <Logo />
     <nav class="hidden sm:flex">
-      <ul class="flex justify-center items-center gap-8 m-2 lg:m-4 flex-wrap">
+      <ul class="m-2 flex flex-wrap items-center justify-center gap-8 lg:m-4">
         <NavList />
       </ul>
     </nav>
     <button
-      class="flex justify-center items-center sm:hidden p-2 z-1"
+      class="z-1 flex items-center justify-center p-2 sm:hidden"
       on:click={() => (isOpen = !isOpen)}
     >
       {#if isOpen}
@@ -30,9 +30,9 @@
   </header>
   {#if isOpen}
     <nav
-      class="flex sm:hidden mx-auto max-w-screen-xl items-center justify-between border-b border-gray/25"
+      class="mx-auto flex max-w-screen-xl items-center justify-between border-b border-gray/25 sm:hidden"
     >
-      <ul class="flex justify-center items-center gap-4 p-2 max-w-screen-xl flex-wrap mx-auto">
+      <ul class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-center gap-4 p-2">
         <NavList on:click={() => (isOpen = !isOpen)} />
       </ul>
     </nav>

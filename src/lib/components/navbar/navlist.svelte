@@ -19,7 +19,7 @@
 </script>
 
 {#each links as link}
-  <li class="text-darkgray stroke-darkgray font-mono lowercase text-center relative">
+  <li class="relative stroke-darkgray text-center font-mono lowercase text-darkgray">
     <a
       class="peer hover:opacity-100 {$page.url.pathname === link.href ? active : inactive}"
       href={link.href}
@@ -28,10 +28,10 @@
       <svelte:component this={link.icon} />{link.text}
     </a>
     <span
-      class="block logo-gradient absolute w-0 h-1 ml-auto peer-hover:mr-auto peer-hover:ml-0 peer-hover:w-full motion-safe:transition-[width]"
+      class="logo-gradient absolute ml-auto block h-1 w-0 peer-hover:ml-0 peer-hover:mr-auto peer-hover:w-full motion-safe:transition-[width]"
     />
     <!-- Invisible bold text below to maintain spacing when nav element changes to bold -->
-    <span class="block font-semibold h-[0px] overflow-hidden text-transparent">
+    <span class="block h-[0px] overflow-hidden font-semibold text-transparent">
       <svelte:component this={link.icon} />{link.text}
     </span>
   </li>
