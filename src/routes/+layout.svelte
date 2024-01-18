@@ -2,6 +2,7 @@
   import '../app.css';
   import { page } from '$app/stores';
   import NavBar from '$lib/components/navbar/navbar.svelte';
+  import Content from '$lib/components/content.svelte';
 </script>
 
 <svelte:head>
@@ -30,4 +31,6 @@
   </div>
 </div>
 
-<slot />
+<Content>
+  <slot />
+</Content>
