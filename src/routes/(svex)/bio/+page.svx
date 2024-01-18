@@ -1,7 +1,3 @@
----
-title: bio
----
-
 <script lang="ts">
   import Prose from '$lib/components/prose.svelte';
   import Text2Columns from '$lib/components/text2columns.svelte';
